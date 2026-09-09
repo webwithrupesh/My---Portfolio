@@ -38,6 +38,7 @@ a {
 
 /* ================= NAVBAR ================= */
 
+<<<<<<< HEAD
 /* ================= NAVBAR ================= */
 
 .navbar {
@@ -51,6 +52,18 @@ a {
     z-index: 9999;
 
     background-color: #111827;
+=======
+.navbar {
+    width: 100%;
+
+    min-height: 70px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 9999;
+>>>>>>> 32c79feb5e20ab3a5f062696249df50d80f566bb
 }
 
 .rnav {
@@ -59,16 +72,30 @@ a {
 
 .nav-container {
     width: 100%;
+<<<<<<< HEAD
     height: 70px;
 
     display: flex;
     align-items: center;
+=======
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+>>>>>>> 32c79feb5e20ab3a5f062696249df50d80f566bb
     justify-content: space-between;
 
     padding: 0 40px;
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 32c79feb5e20ab3a5f062696249df50d80f566bb
 /* ================= LOGO ================= */
 
 .logo {
