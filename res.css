@@ -1,0 +1,491 @@
+/* ================= RESPONSIVE CSS ================= */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+
+    /* ================= NAVBAR ================= */
+
+    .nav-container {
+        padding: 0 25px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #111827;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 20px 0;
+
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        text-align: center;
+
+        padding: 70px 0;
+    }
+
+    .hero-row {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .hero-content {
+        margin-bottom: 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        margin-left: auto;
+
+        margin-right: auto;
+
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+
+    /* ================= HERO IMAGE ================= */
+
+    .hero-img {
+        max-width: 330px;
+    }
+
+
+
+    /* ================= ABOUT ================= */
+
+    .about {
+        text-align: center;
+
+        padding: 80px 0;
+    }
+
+    .about-row {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .about-content {
+        padding-right: 0;
+
+        order: 1;
+    }
+
+    .about-image-box {
+        order: 2;
+    }
+
+    .about p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .about-img {
+        max-width: 320px;
+
+        margin: 0 auto;
+    }
+
+
+
+    /* ================= SKILLS ================= */
+
+    .skills {
+        padding: 80px 0;
+    }
+
+    .skills-heading {
+        margin-bottom: 40px;
+    }
+
+    .skills-heading h2 {
+        font-size: 36px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .skill-card {
+        min-height: 180px;
+    }
+
+    .skill-icon {
+        font-size: 60px;
+    }
+
+
+
+    /* ================= PROJECTS ================= */
+
+    .projects {
+        padding: 80px 0;
+    }
+
+    .projects-heading {
+        margin-bottom: 40px;
+    }
+
+    .projects-heading h2 {
+        font-size: 36px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .project-image-box {
+        height: 210px;
+    }
+
+}
+
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 576px) {
+
+
+    /* ================= NAVBAR ================= */
+
+    .nav-container {
+        padding: 0 15px;
+    }
+
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+
+
+    /* ================= HERO BUTTONS ================= */
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .hero-btn {
+        width: 180px;
+    }
+
+
+
+    /* ================= HERO IMAGE ================= */
+
+    .hero-img {
+        max-width: 260px;
+
+        margin-top: 10px;
+    }
+
+
+
+    /* ================= ABOUT ================= */
+
+    .about {
+        padding: 60px 15px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    .about-content {
+        order: 1;
+    }
+
+    .about-image-box {
+        order: 2;
+    }
+
+    .about-img {
+        max-width: 260px;
+
+        margin: 0 auto;
+    }
+
+
+
+    /* ================= SKILLS ================= */
+
+    .skills {
+        padding: 60px 15px;
+    }
+
+    .skills-heading h2 {
+        font-size: 32px;
+    }
+
+    .skills-heading p {
+        font-size: 15px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .skill-card {
+        min-height: 160px;
+
+        padding: 25px 10px;
+
+        border-radius: 12px;
+    }
+
+    .skill-icon {
+        font-size: 50px;
+
+        margin-bottom: 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 17px;
+    }
+
+
+
+    /* ================= PROJECTS ================= */
+
+    .projects {
+        padding: 60px 15px;
+    }
+
+    .projects-heading h2 {
+        font-size: 32px;
+    }
+
+    .projects-heading p {
+        font-size: 15px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .project-image-box {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 21px;
+    }
+
+    .project-content p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ================= CONTACT ================= */
+
+@media (max-width: 991px) {
+
+    .contact {
+        padding: 80px 0;
+    }
+
+    .contact-row {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .contact {
+        padding: 60px 15px;
+    }
+
+    .contact-heading h2 {
+        font-size: 32px;
+    }
+
+    .contact-heading p {
+        font-size: 15px;
+    }
+
+    .contact-info h3 {
+        font-size: 28px;
+    }
+
+    .contact-description {
+        font-size: 15px;
+    }
+
+    .contact-form-box {
+        padding: 22px;
+
+        border-radius: 12px;
+    }
+
+    .contact-item {
+        justify-content: flex-start;
+
+        text-align: left;
+    }
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+@media (max-width: 991px) {
+
+    .footer {
+        padding: 50px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .footer {
+        padding: 45px 15px 20px;
+
+        text-align: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-brand p {
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .footer-contact {
+        align-items: center;
+    }
+
+    .footer-contact a,
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}
