@@ -1115,3 +1115,29 @@ a {
 
     font-size: 14px;
 }
+
+/* ================= TYPED JS ================= */
+
+.hero-role {
+    margin-top: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    
+    font-size: 30px;
+    font-weight: 600;
+    color: #38BDF8;
+}
+
+#element {
+    display: inline-block;
+    width: 350px;
+    white-space: nowrap;
+
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color:red;
+
+
+

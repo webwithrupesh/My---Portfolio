@@ -1,1003 +1,580 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>My Portfolio</title>
-
 
     <!-- ================= DEVICON ================= -->
 
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    >
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
->
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- ================= CUSTOM CSS ================= -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="res.css" />
+  </head>
 
-</head>
-
-
-<body>
-
-
+  <body>
     <!-- ================= NAVBAR ================= -->
 
     <nav class="navbar rnav">
+      <div class="nav-container">
+        <!-- Logo -->
 
-        <div class="nav-container">
+        <a class="logo" href="#home"> Port<span>folio</span> </a>
 
+        <!-- Mobile Button -->
 
-            <!-- Logo -->
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <span></span>
 
-            <a class="logo" href="#home">
+          <span></span>
 
-                Port<span>folio</span>
+          <span></span>
+        </button>
 
-            </a>
+        <!-- Navigation -->
 
+        <div class="nav-menu" id="navMenu">
+          <a class="link" href="#home"> Home </a>
 
-            <!-- Mobile Button -->
+          <a class="link" href="#about"> About </a>
 
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                aria-label="Open menu"
-            >
+          <a class="link" href="#skills"> Skills </a>
 
-                <span></span>
+          <a class="link" href="#projects"> Projects </a>
 
-                <span></span>
-
-                <span></span>
-
-            </button>
-
-
-            <!-- Navigation -->
-
-            <div class="nav-menu" id="navMenu">
-
-                <a class="link" href="#home">
-                    Home
-                </a>
-
-                <a class="link" href="#about">
-                    About
-                </a>
-
-                <a class="link" href="#skills">
-                    Skills
-                </a>
-
-                <a class="link" href="#projects">
-                    Projects
-                </a>
-
-                <a class="link" href="#contact">
-                    Contact
-                </a>
-
-            </div>
-
+          <a class="link" href="#contact"> Contact </a>
         </div>
-
+      </div>
     </nav>
-
-
 
     <!-- ================= HERO ================= -->
 
     <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-row">
+          <!-- Hero Content -->
 
-        <div class="container">
+          <div class="hero-content">
+            <h1>
+              Hi, I'm
 
-            <div class="hero-row">
+              <span> Rupesh Kumar </span>
+            </h1>
 
+            <h2>Full Stack Developer</h2>
+            <!-- Element to contain animated typing -->
+            <h2 class="hero-role">
+              <span id="element"></span>
+            </h2>
 
-                <!-- Hero Content -->
+            <p>
+              I build modern, responsive and user-focused web applications with
+              clean code and great user experience.
+            </p>
 
-                <div class="hero-content">
+            <p class="skills-text">
+              HTML • CSS • JavaScript • Bootstrap • Node.js • Express.js •
+              MongoDB • Git
+            </p>
 
-                    <h1>
+            <!-- Hero Buttons -->
 
-                        Hi, I'm
+            <div class="hero-buttons">
+              <a href="#projects" class="hero-btn primary-btn">
+                View Projects
+              </a>
 
-                        <span>
-                            Rupesh Kumar
-                        </span>
-
-                    </h1>
-
-
-                    <h2>
-                        Full Stack Developer
-                    </h2>
-
-
-                    <p>
-
-                        I build modern, responsive and
-                        user-focused web applications with
-                        clean code and great user experience.
-
-                    </p>
-
-
-                    <p class="skills-text">
-
-                        HTML • CSS • JavaScript • Bootstrap •
-                        Node.js • Express.js • MongoDB • Git
-
-                    </p>
-
-
-                    <!-- Hero Buttons -->
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#projects"
-                            class="hero-btn primary-btn"
-                        >
-                            View Projects
-                        </a>
-
-
-                        <a
-                            href="resume/resume.pdf"
-                            class="hero-btn danger-btn"
-                            download
-                        >
-                            Download Resume
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- Hero Image -->
-
-                <div class="hero-image-box">
-
-                    <img
-                        src="assets/bg.jpeg"
-                        alt="Rupesh Kumar"
-                        class="hero-img"
-                    >
-
-                </div>
-
+              <a href="resume/resume.pdf" class="hero-btn danger-btn" download>
+                Download Resume
+              </a>
             </div>
+          </div>
 
+          <!-- Hero Image -->
+
+          <div class="hero-image-box">
+            <img src="assets/bg.jpeg" alt="Rupesh Kumar" class="hero-img" />
+          </div>
         </div>
-
+      </div>
     </section>
-
-
 
     <!-- ================= ABOUT ================= -->
 
     <section id="about" class="about">
+      <div class="container">
+        <div class="about-row">
+          <!-- About Content -->
 
-        <div class="container">
+          <div class="about-content">
+            <h2>About Me</h2>
 
-            <div class="about-row">
+            <p>
+              I'm Rupesh Kumar, a BCA student and aspiring Full Stack Developer.
+              I enjoy building modern and responsive web applications and
+              continuously improving my development skills.
+            </p>
 
+            <p>
+              I have experience working with HTML, CSS, JavaScript, Bootstrap,
+              Node.js, Express.js and MongoDB. I believe in writing clean code
+              and creating simple, user-friendly experiences.
+            </p>
 
-                <!-- About Content -->
+            <a href="#contact" class="about-btn primary-btn"> Let's Connect </a>
+          </div>
 
-                <div class="about-content">
+          <!-- About Image -->
 
-                    <h2>
-                        About Me
-                    </h2>
-
-
-                    <p>
-
-                        I'm Rupesh Kumar, a BCA student
-                        and aspiring Full Stack Developer.
-                        I enjoy building modern and
-                        responsive web applications and
-                        continuously improving my
-                        development skills.
-
-                    </p>
-
-
-                    <p>
-
-                        I have experience working with
-                        HTML, CSS, JavaScript, Bootstrap,
-                        Node.js, Express.js and MongoDB.
-                        I believe in writing clean code
-                        and creating simple,
-                        user-friendly experiences.
-
-                    </p>
-
-
-                    <a
-                        href="#contact"
-                        class="about-btn primary-btn"
-                    >
-                        Let's Connect
-                    </a>
-
-                </div>
-
-
-
-                <!-- About Image -->
-
-                <div class="about-image-box">
-
-                    <img
-                        src="assets/developer img.jpg"
-                        alt="About Rupesh"
-                        class="about-img"
-                    >
-
-                </div>
-
-            </div>
-
+          <div class="about-image-box">
+            <img
+              src="assets/developer img.jpg"
+              alt="About Rupesh"
+              class="about-img"
+            />
+          </div>
         </div>
-
+      </div>
     </section>
-
-
 
     <!-- ================= SKILLS ================= -->
 
     <section id="skills" class="skills">
-
-        <div class="container">
-
-
-            <!-- Skills Heading -->
-
-            <div class="skills-heading">
-
-                <h2>
-
-                    My
-                    <span>Skills</span>
-
-                </h2>
-
-
-                <p>
-
-                    Technologies and tools I use
-                    to build modern web applications.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- Skills Grid -->
-
-            <div class="skills-grid">
-
-
-                <!-- HTML -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-html5-plain colored skill-icon"
-                    ></i>
-
-                    <h3>
-                        HTML
-                    </h3>
-
-                </div>
-
-
-
-                <!-- CSS -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-css3-plain colored skill-icon"
-                    ></i>
-
-                    <h3>
-                        CSS
-                    </h3>
-
-                </div>
-
-
-
-                <!-- JavaScript -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-javascript-plain colored skill-icon"
-                    ></i>
-
-                    <h3>
-                        JavaScript
-                    </h3>
-
-                </div>
-
-
-
-                <!-- Bootstrap -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-bootstrap-plain colored skill-icon"
-                    ></i>
-
-                    <h3>
-                        Bootstrap
-                    </h3>
-
-                </div>
-
-
-
-                <!-- Node.js -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-nodejs-plain colored skill-icon"
-                    ></i>
-
-                    <h3>
-                        Node.js
-                    </h3>
-
-                </div>
-
-
-
-                <!-- Express.js -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-express-original skill-icon express-icon"
-                    ></i>
-
-                    <h3>
-                        Express.js
-                    </h3>
-
-                </div>
-
-
-
-                <!-- MongoDB -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-mongodb-plain colored skill-icon"
-                    ></i>
-
-                    <h3>
-                        MongoDB
-                    </h3>
-
-                </div>
-
-
-
-                <!-- Git -->
-
-                <div class="skill-card">
-
-                    <i
-                        class="devicon-git-plain colored skill-icon"
-                    ></i>
-
-                    <h3>
-                        Git
-                    </h3>
-
-                </div>
-
-            </div>
-
+      <div class="container">
+        <!-- Skills Heading -->
+
+        <div class="skills-heading">
+          <h2>
+            My
+            <span>Skills</span>
+          </h2>
+
+          <p>Technologies and tools I use to build modern web applications.</p>
         </div>
 
+        <!-- Skills Grid -->
+
+        <div class="skills-grid">
+          <!-- HTML -->
+
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored skill-icon"></i>
+
+            <h3>HTML</h3>
+          </div>
+
+          <!-- CSS -->
+
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored skill-icon"></i>
+
+            <h3>CSS</h3>
+          </div>
+
+          <!-- JavaScript -->
+
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored skill-icon"></i>
+
+            <h3>JavaScript</h3>
+          </div>
+
+          <!-- Bootstrap -->
+
+          <div class="skill-card">
+            <i class="devicon-bootstrap-plain colored skill-icon"></i>
+
+            <h3>Bootstrap</h3>
+          </div>
+
+          <!-- Node.js -->
+
+          <div class="skill-card">
+            <i class="devicon-nodejs-plain colored skill-icon"></i>
+
+            <h3>Node.js</h3>
+          </div>
+
+          <!-- Express.js -->
+
+          <div class="skill-card">
+            <i class="devicon-express-original skill-icon express-icon"></i>
+
+            <h3>Express.js</h3>
+          </div>
+
+          <!-- MongoDB -->
+
+          <div class="skill-card">
+            <i class="devicon-mongodb-plain colored skill-icon"></i>
+
+            <h3>MongoDB</h3>
+          </div>
+
+          <!-- Git -->
+
+          <div class="skill-card">
+            <i class="devicon-git-plain colored skill-icon"></i>
+
+            <h3>Git</h3>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- ================= PROJECTS ================= -->
 
     <section id="projects" class="projects">
-
-        <div class="container">
-
-
-            <!-- Projects Heading -->
-
-            <div class="projects-heading">
-
-                <h2>
-
-                    My
-                    <span>Projects</span>
-
-                </h2>
-
-
-                <p>
-
-                    Some of the projects I have built
-                    while learning and improving my
-                    web development skills.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- Projects Grid -->
-
-            <div class="projects-grid">
-
-
-                <!-- ================= CALCULATOR ================= -->
-
-                <div class="project-card">
-
-
-                    <div class="project-image-box">
-
-                        <img
-                            src="assets/calculator.png"
-                            alt="Calculator Project"
-                            class="project-img"
-                        >
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <h3>
-                            Calculator
-                        </h3>
-
-
-                        <p>
-
-                            A simple and responsive calculator
-                            built using HTML, CSS and JavaScript
-                            for performing basic arithmetic
-                            operations.
-
-                        </p>
-
-
-                        <a
-                            href="https://webwithrupesh.github.io/Calculator-Project/"
-                            class="project-btn primary-btn"
-                        >
-                            View Project
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ================= PASSWORD GENERATOR ================= -->
-
-                <div class="project-card">
-
-
-                    <div class="project-image-box">
-
-                        <img
-                            src="assets/password-generator.png"
-                            alt="Password Generator Project"
-                            class="project-img"
-                        >
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <h3>
-                            Password Generator
-                        </h3>
-
-
-                        <p>
-
-                            A JavaScript-based password generator
-                            that creates random passwords with
-                            different characters and options.
-
-                        </p>
-
-
-                        <a
-                            href="https://webwithrupesh.github.io/Password-Generator-Project/"
-                            class="project-btn primary-btn"
-                        >
-                            View Project
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ================= SIMON SAYS ================= -->
-
-                <div class="project-card">
-
-
-                    <div class="project-image-box">
-
-                        <img
-                            src="assets/simon-says.png"
-                            alt="Simon Says Game Project"
-                            class="project-img"
-                        >
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <h3>
-                            Simon Says Game
-                        </h3>
-
-
-                        <p>
-
-                            An interactive memory game built
-                            using HTML, CSS and JavaScript
-                            where players follow and remember
-                            a sequence of colors.
-
-                        </p>
-
-
-                        <a
-                            href="https://webwithrupesh.github.io/Simon-Says-Game/"
-                            class="project-btn primary-btn"
-                        >
-                            View Project
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ================= PRICING CARD ================= -->
-
-                <div class="project-card">
-
-
-                    <div class="project-image-box">
-
-                        <img
-                            src="assets/pricing-card.png"
-                            alt="Pricing Card Project"
-                            class="project-img"
-                        >
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <h3>
-                            Pricing Card
-                        </h3>
-
-
-                        <p>
-
-                            A clean and responsive pricing card
-                            UI designed using HTML and CSS with
-                            a modern layout and simple styling.
-
-                        </p>
-
-
-                        <a
-                            href="https://webwithrupesh.github.io/responsive-pricing-card/"
-                            class="project-btn primary-btn"
-                        >
-                            View Project
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
+      <div class="container">
+        <!-- Projects Heading -->
+
+        <div class="projects-heading">
+          <h2>
+            My
+            <span>Projects</span>
+          </h2>
+
+          <p>
+            Some of the projects I have built while learning and improving my
+            web development skills.
+          </p>
         </div>
 
+        <!-- Projects Grid -->
+
+        <div class="projects-grid">
+          <!-- ================= CALCULATOR ================= -->
+
+          <div class="project-card">
+            <div class="project-image-box">
+              <img
+                src="assets/calculator.png"
+                alt="Calculator Project"
+                class="project-img"
+              />
+            </div>
+
+            <div class="project-content">
+              <h3>Calculator</h3>
+
+              <p>
+                A simple and responsive calculator built using HTML, CSS and
+                JavaScript for performing basic arithmetic operations.
+              </p>
+
+              <a
+                href="https://webwithrupesh.github.io/Calculator-Project/"
+                class="project-btn primary-btn"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= PASSWORD GENERATOR ================= -->
+
+          <div class="project-card">
+            <div class="project-image-box">
+              <img
+                src="assets/password-generator.png"
+                alt="Password Generator Project"
+                class="project-img"
+              />
+            </div>
+
+            <div class="project-content">
+              <h3>Password Generator</h3>
+
+              <p>
+                A JavaScript-based password generator that creates random
+                passwords with different characters and options.
+              </p>
+
+              <a
+                href="https://webwithrupesh.github.io/Password-Generator-Project/"
+                class="project-btn primary-btn"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= SIMON SAYS ================= -->
+
+          <div class="project-card">
+            <div class="project-image-box">
+              <img
+                src="assets/simon-says.png"
+                alt="Simon Says Game Project"
+                class="project-img"
+              />
+            </div>
+
+            <div class="project-content">
+              <h3>Simon Says Game</h3>
+
+              <p>
+                An interactive memory game built using HTML, CSS and JavaScript
+                where players follow and remember a sequence of colors.
+              </p>
+
+              <a
+                href="https://webwithrupesh.github.io/Simon-Says-Game/"
+                class="project-btn primary-btn"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= PRICING CARD ================= -->
+
+          <div class="project-card">
+            <div class="project-image-box">
+              <img
+                src="assets/pricing-card.png"
+                alt="Pricing Card Project"
+                class="project-img"
+              />
+            </div>
+
+            <div class="project-content">
+              <h3>Pricing Card</h3>
+
+              <p>
+                A clean and responsive pricing card UI designed using HTML and
+                CSS with a modern layout and simple styling.
+              </p>
+
+              <a
+                href="https://webwithrupesh.github.io/responsive-pricing-card/"
+                class="project-btn primary-btn"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ================= CONTACT ================= -->
 
-<section id="contact" class="contact">
-
-    <div class="container">
-
+    <section id="contact" class="contact">
+      <div class="container">
         <!-- Contact Heading -->
 
         <div class="contact-heading">
+          <h2>Contact <span>Me</span></h2>
 
-            <h2>
-                Contact <span>Me</span>
-            </h2>
-
-            <p>
-                Have a project or want to get in touch?
-                Send me a message.
-            </p>
-
+          <p>Have a project or want to get in touch? Send me a message.</p>
         </div>
-
 
         <!-- Contact Row -->
 
         <div class="contact-row">
+          <!-- ================= LEFT SIDE ================= -->
 
+          <div class="contact-info">
+            <h3>Let's Talk</h3>
 
-            <!-- ================= LEFT SIDE ================= -->
+            <p class="contact-description">
+              Feel free to contact me for projects, collaboration or any web
+              development related queries.
+            </p>
 
-            <div class="contact-info">
+            <!-- WhatsApp -->
 
-                <h3>
-                    Let's Talk
-                </h3>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
 
-                <p class="contact-description">
-                    Feel free to contact me for projects,
-                    collaboration or any web development
-                    related queries.
-                </p>
+              <div>
+                <h4>WhatsApp</h4>
 
-
-                <!-- WhatsApp -->
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-brands fa-whatsapp"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h4>WhatsApp</h4>
-
-                        <a
-                            href="https://wa.me/917080561243"
-                            target="_blank"
-                        >
-                            +91 70805 61243
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Gmail -->
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h4>Email</h4>
-
-                        <a
-                            href="mailto:rupeshkumarit05@gmail.com"
-                        >
-                            rupeshkumarit05@gmail.com
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Location -->
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h4>Location</h4>
-
-                        <p>
-                            Muzaffarpur, Bihar, India
-                        </p>
-
-                    </div>
-
-                </div>
-
+                <a href="https://wa.me/917080561243" target="_blank">
+                  +91 70805 61243
+                </a>
+              </div>
             </div>
 
+            <!-- Gmail -->
 
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
 
-            <!-- ================= RIGHT SIDE FORM ================= -->
+              <div>
+                <h4>Email</h4>
 
-            <div class="contact-form-box">
-
-               <form id="contactForm">
-
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name"
-               placeholder="Enter your name" required>
-    </div>
-
-    <div class="form-group">
-        <label for="email">Gmail</label>
-        <input type="email" id="email" name="email"
-               placeholder="Enter your Gmail" required>
-    </div>
-
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message"
-                  placeholder="Write your message..." required></textarea>
-    </div>
-
-    <button type="submit" class="contact-btn">
-        Send Message
-    </button>
-
-</form>
+                <a href="mailto:rupeshkumarit05@gmail.com">
+                  rupeshkumarit05@gmail.com
+                </a>
+              </div>
             </div>
 
+            <!-- Location -->
 
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <h4>Location</h4>
+
+                <p>Muzaffarpur, Bihar, India</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= RIGHT SIDE FORM ================= -->
+
+          <div class="contact-form-box">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Gmail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your Gmail"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- ================= FOOTER ================= -->
 
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="container">
-
+    <footer class="footer">
+      <div class="container">
         <div class="footer-content">
+          <!-- Logo / About -->
 
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo"> Port<span>folio</span> </a>
 
-            <!-- Logo / About -->
+            <p>
+              I'm Rupesh Kumar, an aspiring Full Stack Developer passionate
+              about building modern web applications.
+            </p>
+          </div>
 
-            <div class="footer-brand">
+          <!-- Quick Links -->
 
-                <a href="#home" class="footer-logo">
-                    Port<span>folio</span>
-                </a>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
 
-                <p>
-                    I'm Rupesh Kumar, an aspiring
-                    Full Stack Developer passionate
-                    about building modern web applications.
-                </p>
+            <a href="#home">Home</a>
 
-            </div>
+            <a href="#about">About</a>
 
+            <a href="#skills">Skills</a>
 
+            <a href="#projects">Projects</a>
 
-            <!-- Quick Links -->
+            <a href="#contact">Contact</a>
+          </div>
 
-            <div class="footer-links">
+          <!-- Contact -->
 
-                <h3>Quick Links</h3>
+          <div class="footer-contact">
+            <h3>Contact</h3>
 
-                <a href="#home">Home</a>
+            <a href="https://wa.me/917080561243" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+              +91 7082561243
+            </a>
 
-                <a href="#about">About</a>
+            <a href="mailto:rupeshkumarit05@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              rupeshkumarit05@gmail.com
+            </a>
 
-                <a href="#skills">Skills</a>
-
-                <a href="#projects">Projects</a>
-
-                <a href="#contact">Contact</a>
-
-            </div>
-
-
-
-            <!-- Contact -->
-
-            <div class="footer-contact">
-
-                <h3>Contact</h3>
-
-                <a
-                    href="https://wa.me/917080561243"
-                    target="_blank"
-                >
-                    <i class="fa-brands fa-whatsapp"></i>
-                    +91 7082561243
-                </a>
-
-                <a
-                    href="mailto:rupeshkumarit05@gmail.com"
-                >
-                    <i class="fa-solid fa-envelope"></i>
-                    rupeshkumarit05@gmail.com
-                </a>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Muzaffarpur, Bihar, India
-                </p>
-
-            </div>
-
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Muzaffarpur, Bihar, India
+            </p>
+          </div>
         </div>
-
-
 
         <!-- Footer Bottom -->
 
         <div class="footer-bottom">
+          <p>© 2026 Rupesh Kumar. All Rights Reserved.</p>
 
-            <p>
-                © 2026 Rupesh Kumar. All Rights Reserved.
-            </p>
-
-            <p>
-                Made with ❤️ by Rupesh Kumar
-            </p>
-
+          <p>Made with ❤️ by Rupesh Kumar</p>
         </div>
-
-    </div>
-
-</footer>
-
-
+      </div>
+    </footer>
 
     <!-- ================= JAVASCRIPT ================= -->
 
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+
     <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Frontend Developer",
+          "Web Developer",
+          "JavaScript Developer",
+          "Creative Developer",
+        ],
 
-        const menuBtn =
-            document.getElementById("menuBtn");
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 1200,
+        startDelay: 300,
 
-        const navMenu =
-            document.getElementById("navMenu");
+        loop: true,
 
-
-        menuBtn.addEventListener("click", function () {
-
-            navMenu.classList.toggle("active");
-
-            menuBtn.classList.toggle("active");
-
-        });
-
-
-        // Close menu after clicking navigation link
-
-        const navLinks =
-            document.querySelectorAll(".link");
-
-
-        navLinks.forEach(function (link) {
-
-            link.addEventListener("click", function () {
-
-                navMenu.classList.remove("active");
-
-                menuBtn.classList.remove("active");
-
-            });
-
-        });
-
-        const contactForm =
-        document.getElementById("contactForm");
-
-
-    contactForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-
-        const name =
-            document.getElementById("name").value;
-
-        const email =
-            document.getElementById("email").value;
-
-        const message =
-            document.getElementById("message").value;
-
-
-        const subject =
-            encodeURIComponent(
-                "Portfolio Contact - " + name
-            );
-
-
-        const body =
-            encodeURIComponent(
-                "Name: " + name +
-                "\nEmail: " + email +
-                "\n\nMessage:\n" + message
-            );
-
-
-        const gmailUrl =
-            "https://mail.google.com/mail/?view=cm&fs=1&to=rupeshkumarit05@gmail.com&su="
-            + subject
-            + "&body="
-            + body;
-
-
-        window.open(gmailUrl, "_blank");
-
-    });
-
+        showCursor: true,
+        cursorChar: "|",
+      });
     </script>
-
-
-</body>
-
+  </body>
 </html>
